@@ -7,7 +7,6 @@ class Jolyne():
         self.InputWord_T = InputWord_T
         self.AlphabetStrength = len(self.Sigma)
 
-    # Stopped here, should run the example from the seminar
     def FromNtoW(self):
         r = 1000
         print(" ")
