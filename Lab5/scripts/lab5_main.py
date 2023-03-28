@@ -1,4 +1,5 @@
-from Lab5.classes.automaton import Automaton
+from Lab5.classes.automaton_initial import AutomatonInitial
+from Lab5.classes.automaton_non_deterministic import AutomatonNonDeterministic
 from Lab5.classes.automaton_helper import AutomatonHelper
 
 
@@ -7,14 +8,28 @@ number_vertexes = 4
 alphabet = ["a", "b"]
 list_starting_vertexes = [0, 1]
 list_final_vertexes = [2]
-file_path = "../files/automaton_initial.txt"
+AutomatonHelper.print_data(number_vertexes, alphabet, list_starting_vertexes, list_final_vertexes)
 
 # reading a file containing edges
+file_path = "../files/automaton_initial.txt"
 lines = AutomatonHelper.read_file(file_path)
 list_edges = AutomatonHelper.create_list_edges(lines)
 
-# creating an initial Automaton
-automaton_initial = Automaton(number_vertexes, list_starting_vertexes, list_final_vertexes)
+# creating an initial automaton
+automaton_initial = AutomatonInitial(number_vertexes, alphabet, list_starting_vertexes, list_final_vertexes)
 automaton_initial.add_edges(list_edges)
 print("Initial automaton")
 automaton_initial.print_edges()
+
+# creating s_vertexes (epsilon closures) and a deterministic automaton
+vertexes_s = automaton_initial.create_list_vertexes_s()
+AutomatonHelper.print_vertexes_s(vertexes_s)
+
+# creating a deterministic automaton
+list_new_edges = automaton_initial.create_list_lists_new_edges(vertexes_s)
+automaton_non_deterministic = AutomatonNonDeterministic(number_vertexes, alphabet, vertexes_s)
+AutomatonHelper.create_tables(number_vertexes, alphabet, list_starting_vertexes, list_final_vertexes)
+
+AutomatonHelper.check_string("abbocj", alphabet)
+AutomatonHelper.check_string("b", alphabet)
+AutomatonHelper.check_string("bab", alphabet)
