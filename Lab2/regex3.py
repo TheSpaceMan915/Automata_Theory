@@ -3,7 +3,7 @@ from string_helper import StringHelper
 
 
 if __name__ == '__main__':
-    helper = StringHelper(r"0*1110*")
+    helper = StringHelper(r"[01]*111[01]*")
     # number_words = int(input("Enter amount of words: "))
 
     helper.generate_words()

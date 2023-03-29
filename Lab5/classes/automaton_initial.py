@@ -63,3 +63,21 @@ class AutomatonInitial(Automaton):
                         new_edge = Edge(vertex_s.number, s.number, symbol)
                         list_lists_new_edges[vertex_s.number].append(new_edge)
         return list_lists_new_edges
+
+    def check_str(self, string, alphabet):
+        set_alphabet = set(alphabet)
+        set_string = set(string)
+
+        if set_string.issubset(set_alphabet):
+            for char in string:
+                for list in self._list_lists_edges:
+                    for edge in list:
+                        if edge.symbol == char:
+                            AutomatonInitial.check_str(string[1:], alphabet)
+                            if len(string) == 0:
+                                print("Correct")
+                            else:
+                                print("Wrong")
+
+        else:
+            print("The string contains symbols that are from another alphabet. Enter another string")

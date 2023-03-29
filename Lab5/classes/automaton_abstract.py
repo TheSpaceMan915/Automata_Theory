@@ -1,7 +1,6 @@
-from abc import ABC, abstractmethod
+from abc import ABC
 
 
-# could delete list_starting_vertexes, list_final_vertexes parameters
 class Automaton(ABC):
     # def __init__(self, number_vertexes, list_starting_vertexes, list_final_vertexes):
     #     self._number_vertexes = number_vertexes

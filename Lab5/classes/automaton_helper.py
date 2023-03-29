@@ -54,6 +54,7 @@ class AutomatonHelper:
         print("Table P")
         automaton_initial.print_edges()
 
+    # main method to check if a string is acceptable
     @staticmethod
     def check_string(string, alphabet):
         set_alphabet = set(alphabet)

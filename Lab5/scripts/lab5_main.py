@@ -26,10 +26,10 @@ vertexes_s = automaton_initial.create_list_vertexes_s()
 AutomatonHelper.print_vertexes_s(vertexes_s)
 
 # creating a deterministic automaton
-list_new_edges = automaton_initial.create_list_lists_new_edges(vertexes_s)
 automaton_non_deterministic = AutomatonNonDeterministic(number_vertexes, alphabet, vertexes_s)
 AutomatonHelper.create_tables(number_vertexes, alphabet, list_starting_vertexes, list_final_vertexes)
 
+# checking whether a string is acceptable or not
 AutomatonHelper.check_string("abbocj", alphabet)
 AutomatonHelper.check_string("b", alphabet)
 AutomatonHelper.check_string("bab", alphabet)
