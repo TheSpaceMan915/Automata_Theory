@@ -38,7 +38,7 @@ class AutomatonInitial(Automaton):
             vertex_s.vertex_numbers.add(i)
 
             for edge in self._list_lists_edges[i]:
-                if edge.symbol == "eps":
+                if edge.state == "eps":
                     # adding another vertex (vertex_to) to the set
                     vertex_s.vertex_numbers.add(edge.vertex_to)
             self.check_type_vertex_s(vertex_s)
@@ -55,7 +55,7 @@ class AutomatonInitial(Automaton):
 
                 for number_vertex in vertex_s.vertex_numbers:
                     for edge in list_lists_edges[number_vertex]:
-                        if edge.symbol == symbol:
+                        if edge.state == symbol:
                             set_vertex_numbers.add(edge.vertex_to)
 
                 for s in list_vertexes_s:
@@ -72,7 +72,7 @@ class AutomatonInitial(Automaton):
             for char in string:
                 for list in self._list_lists_edges:
                     for edge in list:
-                        if edge.symbol == char:
+                        if edge.state == char:
                             AutomatonInitial.check_str(string[1:], alphabet)
                             if len(string) == 0:
                                 print("Correct")

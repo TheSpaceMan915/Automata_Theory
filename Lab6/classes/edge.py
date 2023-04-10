@@ -1,3 +1,5 @@
+
+
 class Edge:
     def __init__(self, vertex_from, vertex_to, state):
         self._vertex_from = vertex_from
