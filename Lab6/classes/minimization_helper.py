@@ -28,6 +28,7 @@ class MinimizationHelper:
                 vertex_class.difference_update(vertex_subclass)
                 vertex_subclass.clear()
 
+        # saving subclasses in the list of equivalence classes
         for subclass in list_vertex_subclasses:
             self._list_equivalence_classes.append(subclass)
 
@@ -40,6 +41,7 @@ class MinimizationHelper:
                         if edge.vertex_from in vertex_class:
                             list_edges.append(edge)
                     else:
+                        # adding to the list edges whose vertexes aren't in the vertex class
                         if edge.vertex_from not in vertex_class:
                             list_edges.append(edge)
                         elif edge.vertex_to not in vertex_class:

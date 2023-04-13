@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 if __name__ == '__main__':
-    # initialising data
+    # initialising the data
     number_vertexes = 6
     alphabet = {"a", "b"}
     set_vertexes = {i for i in range(number_vertexes)}
