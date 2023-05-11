@@ -1,4 +1,4 @@
-from Lab5.classes.automaton_abstract import Automaton
+from lab5.classes.automaton_abstract import Automaton
 
 
 class AutomatonDeterministic(Automaton):

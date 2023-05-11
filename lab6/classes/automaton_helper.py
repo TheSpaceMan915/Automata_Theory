@@ -1,4 +1,4 @@
-from Lab6.classes.edge import Edge
+from lab6.classes.edge import Edge
 
 
 class AutomatonHelper:

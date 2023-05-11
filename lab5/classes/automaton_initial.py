@@ -1,6 +1,6 @@
-from Lab5.classes.automaton_abstract import Automaton
-from Lab5.classes.vertex_s import VertexS
-from Lab5.classes.edge import Edge
+from lab5.classes.automaton_abstract import Automaton
+from lab5.classes.vertex_s import VertexS
+from lab5.classes.edge import Edge
 
 
 class AutomatonInitial(Automaton):

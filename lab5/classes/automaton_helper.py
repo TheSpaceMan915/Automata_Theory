@@ -1,5 +1,5 @@
-from Lab5.classes.edge import Edge
-from Lab5.classes.automaton_initial import AutomatonInitial
+from lab5.classes.edge import Edge
+from lab5.classes.automaton_initial import AutomatonInitial
 import re
 
 

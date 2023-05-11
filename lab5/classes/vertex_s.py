@@ -1,4 +1,4 @@
-from Lab5.classes.vertex import Vertex
+from lab5.classes.vertex import Vertex
 
 
 # test properties

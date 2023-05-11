@@ -1,6 +1,6 @@
-from Lab5.classes.automaton_initial import AutomatonInitial
-from Lab5.classes.automaton_non_deterministic import AutomatonNonDeterministic
-from Lab5.classes.automaton_helper import AutomatonHelper
+from lab5.classes.automaton_initial import AutomatonInitial
+from lab5.classes.automaton_non_deterministic import AutomatonNonDeterministic
+from lab5.classes.automaton_helper import AutomatonHelper
 
 
 # initialising data

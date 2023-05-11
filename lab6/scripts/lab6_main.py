@@ -1,6 +1,6 @@
-from Lab6.classes.basic_automaton import BasicAutomaton
-from Lab6.classes.minimization_helper import MinimizationHelper
-from Lab6.classes.automaton_helper import AutomatonHelper
+from lab6.classes.basic_automaton import BasicAutomaton
+from lab6.classes.minimization_helper import MinimizationHelper
+from lab6.classes.automaton_helper import AutomatonHelper
 from pathlib import Path
 
 

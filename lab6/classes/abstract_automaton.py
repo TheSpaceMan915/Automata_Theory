@@ -2,8 +2,7 @@ from abc import ABC
 
 
 class Automaton(ABC):
-    def __init__(self, number_vertexes, alphabet,
-                 set_starting_vertexes, set_final_vertexes,):
+    def __init__(self, number_vertexes, alphabet, set_starting_vertexes, set_final_vertexes,):
         self._number_vertexes = number_vertexes
         self._alphabet = alphabet
         self._list_edges = []

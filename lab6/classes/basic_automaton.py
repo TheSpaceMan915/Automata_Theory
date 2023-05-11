@@ -1,4 +1,4 @@
-from Lab6.classes.abstract_automaton import Automaton
+from lab6.classes.abstract_automaton import Automaton
 
 
 class BasicAutomaton(Automaton):
